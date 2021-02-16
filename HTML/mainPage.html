@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../SASS/main/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__hamburger">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
+                <li class="navigation__item"><a href="#projects" class="navigation__link">Projects</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+                <li class="navigation__item"><a href="https://github.com/Urban7871?tab=repositories" class="navigation__link">Github</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="header">
+        <div class="header-text-box">
+            <div class="row">
+                <div class="col-1-2">
+                    <h1 class="heading-primary">
+                        <span class="heading-primary-main color-orange">Mateusz Urbański</span>
+                        <span class="heading-primary-sub">Front-end developer</span>
+                    </h1>
+                </div>
+                <div class="col-1-2">
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="list-item list-item--home"><a href="#" class="link-text link-text-home">Home</a></li>
+                            <li class="list-item list-item--about"><a href="#about" class="link-text link-text-about">About</a></li>
+                            <li class="list-item list-item--skills"><a href="#skills" class="link-text link-text-skills">Skills</a></li>
+                            <li class="list-item list-item--projects"><a href="#projects" class="link-text link-text-projects">Projects</a></li>
+                            <li class="list-item list-item--contact"><a href="#contact" class="link-text link-text-contact">Contact</a></li>
+                            <li class="list-item list-item--git"><a target="_blank" href="https://github.com/Urban7871?tab=repositories" class="link-text link-text-git">Github</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    
+
+   <!-- <section class="undertale">
+        <div class="monitor">
+            <a href="#about" target="_blank">
+            <div class="monitor-deskopt"></div>
+            </a>
+            </div>
+        </div>
+    </section> -->
+    
+    <main>
+        <div class="row row-img">
+            <div class="col-1-2"><p class="undertale-text">Click me if you like pixel art!<br>
+                <span class="undertale-text-small">(or video-games)</span>
+            </p></div>
+            <div class="col-1-2">
+                <a href="../HTML/pixelPage.html" target="_blank"><img src="../img/pixil-frame-0 (1).png" alt="me"></a>
+            </div>
+        </div>
+        <section id="about">
+            <div class="row">
+                <div class="col-1-2">
+                    <h2 class="heading-secoundary heading-secoundary-about">
+                        About <span class="color-orange">Me</span>
+                    </h2>
+                </div>
+                <div class="col-1-2">
+                    <p class="paragraph about-paragraph">
+                        I'm front end passionate with no comercial experiance. 
+                        I've been learning HTML, CSS/SASS and JS for over a month now, but since I've discovered this technoologies,
+                        i can't stop wirting code. I love learning about these, and doing so gives me so much fun.
+                        Click on my pixel art - maybe something will happen?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div>
+                <h2 class="heading-secoundary heading-secoundary-skills">
+                    <span class="color-orange">Skills</span></h2>
+            </div>
+            <ul class="skills__list">
+                <li class="skills__list-item">HTMl</li>
+                <li class="skills__list-item">CSS</li>
+                <li class="skills__list-item">SASS</li>
+                <li class="skills__list-item">JavaScript</li>
+                <li class="skills__list-item">Java</li>
+                <li class="skills__list-item">Git</li>
+            </ul>
+            <div class="more__show">
+                <p>Show More</p>
+                <div class="more__text">
+                    <p class="more__html">Html - i feel pretty confident with this one. If i have page design
+                        in my mind, then i know what to put in html.
+                    </p>
+                    <p class="more__css">CSS - i started learning a month ago, and i feel
+                        confident with this language. There is still a lot to learn tho.
+                    </p>
+                <p class="more__sass">SASS - I'm using this technology for one week, 
+                    and i think it's amazing. My biggest problem with SASS is 
+                    7-1 architecture, because I'm still not sure where i should put things.
+                </p>
+                <p class="more__javascript">JavaScript - I do not feel confident with this language,
+                    but i was learning JAVA for few months so i got basics fast. I still need to 
+                    look up lots of things in internet.
+                </p>
+                <p class="more__java">JAVA - i was learning this language for over 5 months in 2020, 
+                    but when i wanted to learn basics of HTML and CSS for my project, i felt
+                    that JAVA is not for me. I can use REST, Maven, JSON, Swing and i know basics of spring.
+                </p>
+                <p class="more__git"> GIT - i was using it when i was programming in java - on course and
+                    with my friend on our private project. I fell really confident with it.
+                </p>
+            </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div>
+                <h2 class="heading-secoundary">
+                    My <span class="color-orange">Projects</span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-2">
+                        <div class="card">
+                            <div class="card__side card__side--front card__side--front-1">
+                                <div class="card__picture card__picture-1">
+                                    &nbsp;
+                                </div>  
+                                <h4 class="card__heading card__heading-1">
+                                    Todo App
+                                </h4>
+                                <div class="card__details card__details-1">
+                                    <p>This is basic Todo List application created
+                                        with vanilla JS, CSS and HTML. It needs little 
+                                        more work, but everything expect saving 
+                                        list and selector element works.
+                                        You can find links after hovering over this element.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-1">
+                                <h4>Links</h4>
+                                <ul>
+                                    <li><a href="https://github.com/Urban7871/ToDoApp">Source</a></li>
+                                    <li><a href="../HTML/todoPage.html" target="_blank">Page</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-1-2">
+                        <div class="card">
+                            <div class="card__side card__side--front card__side--front-2">
+                                <div class="card__picture card__picture-2">
+                                    &nbsp;
+                                </div>  
+                                <h4 class="card__heading card__heading-2">
+                                    Portfolio pixel style
+                                </h4>
+                                <div class="card__details card__details-2">
+                                    <p>My secoundary portfolio page.
+                                        I'm not using this as my primary one,
+                                        because i wanted it to be special, so      
+                                    it has lots of animations and is not as practical as this one</p>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-2">
+                                <h4>Links</h4>
+                                <ul>
+                                    <li><a href="https://github.com/Urban7871/PortfolioPage">Source</a></li>
+                                    <li><a href="../HTML/pixelPage.html" target="_blank">Page</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        <footer>
+            <section id="contact">
+                <h2 class="heading-secoundary"><span class="color-orange-dark">Contact</span> me</h2>
+            <form id="contact__form" action="https://formspree.io/f/mdopvoyr" method="POST">
+                <div class="status"></div>
+                <label>
+                    <input type="email" id="contact__form-email" placeholder="Email" name="_replyto">
+                </label>
+                <label>
+                    <input type="text" id="contact__form-firstname" placeholder="First name/Company name" >
+                </label>
+                <label>
+                    <input type="text" id="contact__form-lastname" placeholder="Last name">
+                </label>
+                <label>
+                    <input type="textarea" id="contact__form-feedback" placeholder="Your feedback" name="message">
+                </label>
+                <label>
+                    <button type="submit" id="contact__btn">Submit</button>
+                </label>
+            </form>
+            <div id="contact__data">
+                <p>Or just write me and email
+                    <br>
+                Email: murbanski710@gmail.com</p>
+            </div>
+            </section>
+        </footer>
+
+   
+    <script src="../JS/main.js"></script>
+</body>
+</html>

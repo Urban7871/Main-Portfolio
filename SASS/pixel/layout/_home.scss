@@ -1,0 +1,109 @@
+body {
+    background-color: $home-background-primary-color;
+}
+
+.introduction {
+    position: relative;
+    height: 100vh;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding-right: .4rem;
+    border-right: .4rem solid $home-text-primary-color;
+    box-sizing: border-box;
+
+    .myAwatar {
+        position: relative;
+        top: 10%;
+        animation: awatarmove 4s step-end infinite;
+    }   
+
+    &-hello {
+        position: absolute;
+        
+        top: 45%;
+        left: 40%;
+
+        &--text{
+        @include helloNameAnimation(2s);
+        }
+        animation: blink .5s step-end infinite;
+    }
+    &-name{
+        position: absolute;
+        top: 45%;
+        left: 33%;
+        
+        &--text{
+            @include helloNameAnimation(2s);
+            animation-delay: 2s;
+            
+        }
+        animation: blink .5s step-end infinite;
+    }
+
+
+    &-chose {
+        position: absolute;
+        top: 40%;
+        left: 35%;
+        text-align: center;
+
+        &--text{
+            animation: typingStayText 1.5s steps(30, end), blink .5s step-end 3;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+          opacity: 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }        
+            
+}
+    
+    &-button{
+        height: 25rem;
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0rem;
+        text-align: start;
+        padding-top: 4rem;
+        background: #0f1616;
+
+        .button {
+            background: transparent;
+            border: none;
+            color:$home-text-primary-color;
+            font-size: 2.6rem;
+            font-family: $home-text-font;
+            margin-bottom: 0;
+            transform: translateX(-10rem);
+
+        &-1:hover,
+        &-2:hover,
+        &-3:hover {
+        color: red;
+        transform: translate(-10rem, -.8rem);
+    }
+        }
+        
+
+        &--button-1:hover,
+        &--button-2:hover,
+        &--button-3:hover {
+            color: red;
+            transform: translateY(-.5rem);
+        }
+
+       &--text1{
+           @include linksAnimation(1.5s, 5.5s);
+        }
+        &--text2{
+           @include linksAnimation(1.5s, 7s);
+        }
+        &--text3{
+            @include linksAnimation(1.5s, 8.5s);
+        } 
+    }
+}

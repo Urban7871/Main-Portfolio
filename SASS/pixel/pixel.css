@@ -1,0 +1,556 @@
+/*
+0-600 phone
+600-900 tablet portait
+900-1200 tablet landscape
+1200-1400 small deskopt
+1400-1800 - normal styles apply
+1800+ big desktop
+*/
+/* 
+$breakpoint argument choices: 
+phone
+tab-port
+tab-land
+big-deskopt
+*/
+/*@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  } */
+@-webkit-keyframes leftToRight {
+  0% {
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes leftToRight {
+  0% {
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes upToDown {
+  0% {
+    -webkit-transform: translateY(-14rem);
+            transform: translateY(-14rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes upToDown {
+  0% {
+    -webkit-transform: translateY(-14rem);
+            transform: translateY(-14rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    scale: .1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    scale: .1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@-webkit-keyframes typing {
+  0% {
+    opacity: 1;
+    width: 0%;
+  }
+  70% {
+    width: 100%;
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  0% {
+    opacity: 1;
+    width: 0%;
+  }
+  70% {
+    width: 100%;
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes typingStayText {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes typingStayText {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes typingStayLinks {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes typingStayLinks {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes awatarmove {
+  0% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+  25% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  50% {
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
+  }
+  75% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+@keyframes awatarmove {
+  0% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+  25% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  50% {
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
+  }
+  75% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #522074;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #522074;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #522074;
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+}
+
+.heading-secoundary {
+  font-size: 3.5rem;
+}
+
+.heading-about {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-text {
+  font-size: 2.3rem;
+}
+
+#about {
+  margin-top: 2rem;
+  display: none;
+  height: 70rem;
+}
+
+#about .col-1-2-skills {
+  text-align: center;
+}
+
+#projects {
+  display: none;
+  height: 70rem;
+}
+
+#projects img {
+  height: 30rem;
+}
+
+#projects ul {
+  margin-top: 2rem;
+}
+
+#projects ul li {
+  margin-top: 2rem;
+}
+
+#projects .col-project {
+  margin-top: 5rem;
+}
+
+#contact {
+  margin-top: 3rem;
+  display: none;
+  height: 70rem;
+  text-align: center;
+}
+
+#contact input, #contact button {
+  font-family: "Press Start 2P", cursive;
+  width: 20rem;
+  height: 4rem;
+  background: transparent;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  color: white;
+}
+
+#contact button:hover {
+  color: red;
+}
+
+.up-button {
+  position: fixed;
+  top: 4rem;
+  right: 4rem;
+  height: 2rem;
+  width: 2rem;
+  font-size: 4rem;
+  background-color: #121b1b;
+  color: white;
+  border: none;
+  z-index: 200;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+.up-button:hover {
+  color: red;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .row {
+    max-width: 50rem;
+  }
+}
+
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.row [class^="col-"] {
+  float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 2rem;
+}
+
+@media (max-width: 56.25em) {
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .row [class^="col-"] {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .row .col {
+    width: 100% !important;
+  }
+}
+
+.row .col-1-2 {
+  width: calc((100% - 2rem)/2);
+}
+
+.row .col-1-3 {
+  width: calc((100% - 2 * 2rem)/3);
+}
+
+.row .col-2-3 {
+  width: calc( (2 *(100% - 2 * 2rem) /3) + 2rem);
+}
+
+.row .col-1-4 {
+  width: calc((100% - 3 * 2rem) /4);
+}
+
+body {
+  background-color: #121b1b;
+}
+
+.introduction {
+  position: relative;
+  height: 100vh;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding-right: .4rem;
+  border-right: 0.4rem solid #522074;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.introduction .myAwatar {
+  position: relative;
+  top: 10%;
+  -webkit-animation: awatarmove 4s step-end infinite;
+          animation: awatarmove 4s step-end infinite;
+}
+
+.introduction-hello {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  -webkit-animation: blink .5s step-end infinite;
+          animation: blink .5s step-end infinite;
+}
+
+.introduction-hello--text {
+  opacity: 0;
+  overflow: hidden;
+  -webkit-animation: typing 2s steps(30, end);
+          animation: typing 2s steps(30, end);
+  white-space: nowrap;
+}
+
+.introduction-name {
+  position: absolute;
+  top: 45%;
+  left: 33%;
+  -webkit-animation: blink .5s step-end infinite;
+          animation: blink .5s step-end infinite;
+}
+
+.introduction-name--text {
+  opacity: 0;
+  overflow: hidden;
+  -webkit-animation: typing 2s steps(30, end);
+          animation: typing 2s steps(30, end);
+  white-space: nowrap;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.introduction-chose {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  text-align: center;
+}
+
+.introduction-chose--text {
+  -webkit-animation: typingStayText 1.5s steps(30, end), blink 0.5s step-end 3;
+          animation: typingStayText 1.5s steps(30, end), blink 0.5s step-end 3;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.introduction-button {
+  height: 25rem;
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0rem;
+  text-align: start;
+  padding-top: 4rem;
+  background: #0f1616;
+}
+
+.introduction-button .button {
+  background: transparent;
+  border: none;
+  color: #522074;
+  font-size: 2.6rem;
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 0;
+  -webkit-transform: translateX(-10rem);
+          transform: translateX(-10rem);
+}
+
+.introduction-button .button-1:hover, .introduction-button .button-2:hover, .introduction-button .button-3:hover {
+  color: red;
+  -webkit-transform: translate(-10rem, -0.8rem);
+          transform: translate(-10rem, -0.8rem);
+}
+
+.introduction-button--button-1:hover, .introduction-button--button-2:hover, .introduction-button--button-3:hover {
+  color: red;
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+.introduction-button--text1 {
+  -webkit-animation: typingStayLinks 1.5s steps(30, end), blink 0.5s step-end 3;
+          animation: typingStayLinks 1.5s steps(30, end), blink 0.5s step-end 3;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.introduction-button--text2 {
+  -webkit-animation: typingStayLinks 1.5s steps(30, end), blink 0.5s step-end 3;
+          animation: typingStayLinks 1.5s steps(30, end), blink 0.5s step-end 3;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.introduction-button--text3 {
+  -webkit-animation: typingStayLinks 1.5s steps(30, end), blink 0.5s step-end 3;
+          animation: typingStayLinks 1.5s steps(30, end), blink 0.5s step-end 3;
+  -webkit-animation-delay: 8.5s;
+          animation-delay: 8.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/*# sourceMappingURL=pixel.css.map */

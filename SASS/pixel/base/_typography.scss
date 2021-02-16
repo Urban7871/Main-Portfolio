@@ -1,0 +1,26 @@
+body {
+    color: $home-text-primary-color;
+    font-family: $home-text-font;
+    font-size: $home-font-size-default;
+}
+
+.heading {
+
+    &-primary {
+        
+    }
+
+    &-secoundary{
+        font-size: 3.5rem;
+    }
+
+    &-about {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
+
+.about-text {
+    font-size: 2.3rem;
+}

@@ -1,0 +1,13 @@
+img {
+    height: 45rem;
+    align-self: center;
+    justify-self: center;
+    @include respond(tab-port) {
+        margin-top: 2rem;
+    }
+
+}
+
+.undertale {
+    animation: 1s fadeIn;
+}

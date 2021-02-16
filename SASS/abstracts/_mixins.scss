@@ -1,0 +1,72 @@
+//Media query manager
+/*
+0-600 phone
+600-900 tablet portait
+900-1200 tablet landscape
+1200-1400 small deskopt
+1400-1800 - normal styles apply
+1800+ big desktop
+*/
+
+/* 
+$breakpoint argument choices: 
+phone
+tab-port
+tab-land
+big-deskopt
+*/
+@mixin helloNameAnimation ($animationTime, ){
+    opacity: 0;
+    overflow: hidden;
+    animation: typing $animationTime steps(30, end);
+    white-space: nowrap;
+}
+@mixin linksAnimation($linkAnimationTime, $linkAnimationDelay){
+    animation: typingStayLinks $linkAnimationTime  steps(30, end), blink .5s step-end 3;
+    animation-delay: $linkAnimationDelay;
+    animation-fill-mode: forwards; 
+    display: block;
+
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin clearFix {   
+    &::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+    
+}
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media(max-width: 37.5em) {     //600px
+            @content
+        }
+    } 
+    @if $breakpoint == tab-port {          
+        @media(max-width: 56.25em) {
+            @content
+        }
+    }
+    @if $breakpoint == tab-land {
+        @media(max-width: 75em) {
+            @content
+        }
+    }
+    @if $breakpoint == small-deskopt {
+        @media(max-width: 87.5em) {
+            @content
+        }
+    }
+    @if $breakpoint == big-deskopt {
+        @media(min-width: 112.5em) {
+            @content
+        }
+    }
+}
+

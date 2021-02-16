@@ -1,0 +1,57 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.color-orange {
+    background-image: linear-gradient(to right, $primary-orange, $primary-orange-light);
+    -webkit-background-clip: text;
+     color: transparent;
+}
+.heading-primary {
+    display: inline-block;
+    justify-content: left;
+
+    
+    &-main {
+        font-size: 4rem;
+        letter-spacing: 2px;
+        @include respond(phone) {
+            font-size: 3rem;
+            letter-spacing: normal;
+        }
+    }
+
+    &-sub {
+        font-size: 2.7rem;
+        display: block;
+        letter-spacing: 3px;
+        @include respond(phone) {
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+    }
+}
+.heading-secoundary {
+font-size: 3rem;
+padding: 2rem;
+justify-items: center;
+letter-spacing: 3px;
+    
+}
+
+.undertale-text {
+    font-family: 'Press Start 2P', cursive;
+    transform: translateY(20rem) translateX(.5rem);
+    font-size: 3rem;
+
+    @include respond(tab-port) {
+        transform: translateY(10rem);
+    }
+
+    &-small {
+        font-size: 1.2rem;
+    }
+}
+
+

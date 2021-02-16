@@ -1,0 +1,18 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+@import "../base/animations";
+
+@import "base/base";
+@import "base/typoghraphy";
+
+@import "components/card";
+@import "components/contactForm";
+@import "components/navbar";
+@import "components/photo";
+@import "components/section";
+
+@import "layout/header";
+@import "layout/navhamburger";
+
+@import "../layout/grid";

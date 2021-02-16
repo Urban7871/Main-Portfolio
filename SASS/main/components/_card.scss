@@ -1,0 +1,109 @@
+.card {
+    perspective: 150rem;  //rotation deg
+    -moz-perspective: 150rem;
+    position: relative; //always use when child has position:absolute 
+    height: 70rem;
+    
+    &__side {
+        border-radius: 1rem;
+        overflow: hidden;
+        height: 50rem;
+        transition: all 1s ease;
+        position: absolute; //cards on top of eachother
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;    //hides back-side of the cards 
+        width: 100%;
+        
+
+        &--front-1 {
+            background-color: white;
+           
+            box-shadow: 0 1rem 6rem rgba(#3a7bd5, .8);
+            color: white;
+        }
+        &--back-1 {
+            transform: rotateY(180deg);
+            color: white;
+            background-image: linear-gradient(to right bottom, #3a7bd5, #3a6073);
+            box-shadow: 0 1rem 6rem rgba(#3a7bd5, .8);
+            text-align: center;
+            font-size: 6rem;
+        }
+        &--front-2 {
+            background-color: white;
+           
+            box-shadow: 0 1rem 6rem rgba(#3a7bd5, .8);
+            color: white;
+            
+        }
+        &--back-2 {
+            transform: rotateY(180deg);
+            color: white;
+            background-image: linear-gradient(to right bottom, #3a7bd5, #3a6073);
+            box-shadow: 0 1rem 6rem rgba(#3a7bd5, .8);
+            text-align: center;
+            font-size: 6rem;
+        }
+    }
+
+
+  
+   height: 50rem;
+   transition: all .8s;
+
+
+   &:hover &__side{  //card:hover only transforms __side--front
+    transform: rotateY(-180deg);
+   }
+   &:hover &__side--back{
+    transform: rotateY(0);
+    
+    }
+    &__picture {
+        background-size: cover;
+        height: 50%;
+        &-2{
+            background-image: url(../../../IMG/portfolio-img.PNG);
+        }
+        &-1 {
+            background-image: url(../../../IMG/todo-list-img.PNG);
+            height: 50%;
+        }
+    }
+
+    &__heading {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        right: 0;
+        text-align: right;
+
+        &-1 {
+            background-image: linear-gradient(90deg, #0073ff, #00d5ff);;
+        }
+        &-2{
+            right: 0;
+            background-color: #121b1b;
+            font-family:  'Press Start 2P', cursive;
+            font-size: 1.6rem;
+            padding-top: 2rem;
+            padding-left: 1rem;
+            padding-bottom: .5rem;
+            transform: translateY(-1.6rem);
+        }
+    }
+
+    &__details {
+        color: black;
+        position: absolute;
+        top: 60%;
+        font-size: 2rem;
+        font-weight: 500;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

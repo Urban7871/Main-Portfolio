@@ -1,0 +1,49 @@
+#about {
+    margin-top: 2rem;
+    display: none;
+    height: 70rem;
+
+    .col-1-2-skills{
+        text-align: center;
+    }
+}
+
+#projects {
+    display: none;
+    height: 70rem;
+
+    img{
+        height: 30rem;
+    }
+
+    ul{
+        margin-top: 2rem;
+
+        li{
+            margin-top: 2rem;
+        }
+    }
+    .col-project {
+        margin-top: 5rem;
+    }
+}
+
+#contact {
+    margin-top: 3rem;
+    display: none;
+    height: 70rem;
+    text-align: center;
+
+    input, button {
+        font-family: $home-text-font;
+        width: 20rem;
+        height: 4rem;
+        background: transparent;
+        margin-bottom: 5rem;
+        margin-top: 3rem;
+        color: white;
+    }
+    button:hover {
+        color: red;
+    }
+}

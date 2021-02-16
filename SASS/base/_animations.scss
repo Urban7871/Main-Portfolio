@@ -1,0 +1,97 @@
+/*@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  } */
+
+  @keyframes leftToRight {
+    0% {
+      transform: translateX(-10rem);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes upToDown {
+    0% {
+      transform: translateY(-14rem);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+        scale: .1;
+    }
+    100% {
+      scale: 1;
+    }
+  }
+  @keyframes typing {
+    0% { 
+        opacity: 1;
+        width: 0% 
+    }
+    70%{
+        width: 100%;
+        opacity: 1;
+    }
+    98%{
+        opacity: 1;
+    }
+    100% {
+        width: 100% 
+    }
+}
+@keyframes typingStayText {
+    0% { 
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@keyframes typingStayLinks {
+    0% { 
+        width: 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@keyframes awatarmove {
+    0% {
+        transform: translateY(0rem);
+    }
+    25%{
+        transform: translateY(-1rem);
+    }
+    50% {
+        transform: translateY(-2rem);
+    }
+    75%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: $home-text-primary-color;
+    }
+}

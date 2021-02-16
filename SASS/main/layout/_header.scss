@@ -1,0 +1,16 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: rgba($color-grey-light-1, .7);
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    transform: translateY(-14rem);
+
+    animation: upToDown 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    @include respond(tab-port) {
+        position: unset;
+    }
+}

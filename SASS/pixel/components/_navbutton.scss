@@ -1,0 +1,22 @@
+.up{
+    
+
+    &-button {
+        position: fixed;
+        top: 4rem;
+        right: 4rem;
+        height: 2rem;
+        width: 2rem;
+        font-size: 4rem;
+        background-color: $home-background-primary-color;
+        color: white;
+        border: none;
+        z-index: 200;
+        scroll-behavior: smooth;
+        text-decoration: none;
+
+        &:hover {
+            color: red;
+        }
+    }
+}
