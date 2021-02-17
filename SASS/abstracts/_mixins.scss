@@ -25,7 +25,7 @@ big-deskopt
     animation: typingStayLinks $linkAnimationTime  steps(30, end), blink .5s step-end 3;
     animation-delay: $linkAnimationDelay;
     animation-fill-mode: forwards; 
-    display: block;
+    display: inline-block;
 
     opacity: 0;
     overflow: hidden;

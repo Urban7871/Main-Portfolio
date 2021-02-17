@@ -234,8 +234,32 @@ big-deskopt
 }
 
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
+  font-size: 68.75%;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 81.25%;
+  }
 }
 
 body {
@@ -427,6 +451,13 @@ body {
           animation: awatarmove 4s step-end infinite;
 }
 
+@media (max-width: 75em) {
+  .introduction .myAwatar {
+    height: 40rem;
+    top: 33%;
+  }
+}
+
 .introduction-hello {
   position: absolute;
   top: 45%;
@@ -441,6 +472,14 @@ body {
   -webkit-animation: typing 2s steps(30, end);
           animation: typing 2s steps(30, end);
   white-space: nowrap;
+}
+
+@media (max-width: 75em) {
+  .introduction-hello {
+    top: 10%;
+    left: 5%;
+    font-size: 2.5rem;
+  }
 }
 
 .introduction-name {
@@ -461,11 +500,27 @@ body {
           animation-delay: 2s;
 }
 
+@media (max-width: 75em) {
+  .introduction-name {
+    top: 10%;
+    left: 5%;
+    font-size: 2.5rem;
+  }
+}
+
 .introduction-chose {
   position: absolute;
   top: 40%;
   left: 35%;
   text-align: center;
+}
+
+@media (max-width: 75em) {
+  .introduction-chose {
+    top: 10%;
+    left: 5%;
+    font-size: 2.5rem;
+  }
 }
 
 .introduction-chose--text {
@@ -492,6 +547,14 @@ body {
   background: #0f1616;
 }
 
+@media (max-width: 75em) {
+  .introduction-button {
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
+    padding-top: 2rem;
+  }
+}
+
 .introduction-button .button {
   background: transparent;
   border: none;
@@ -503,10 +566,25 @@ body {
           transform: translateX(-10rem);
 }
 
+@media (max-width: 75em) {
+  .introduction-button .button {
+    -webkit-transform: translateX(-18rem);
+            transform: translateX(-18rem);
+    font-size: 2.1rem;
+  }
+}
+
 .introduction-button .button-1:hover, .introduction-button .button-2:hover, .introduction-button .button-3:hover {
   color: red;
   -webkit-transform: translate(-10rem, -0.8rem);
           transform: translate(-10rem, -0.8rem);
+}
+
+@media (max-width: 75em) {
+  .introduction-button .button-1:hover, .introduction-button .button-2:hover, .introduction-button .button-3:hover {
+    -webkit-transform: translate(-18rem, -0.4rem);
+            transform: translate(-18rem, -0.4rem);
+  }
 }
 
 .introduction-button--button-1:hover, .introduction-button--button-2:hover, .introduction-button--button-3:hover {
@@ -522,7 +600,7 @@ body {
           animation-delay: 5.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  display: block;
+  display: inline-block;
   opacity: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -535,7 +613,7 @@ body {
           animation-delay: 7s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  display: block;
+  display: inline-block;
   opacity: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -548,7 +626,7 @@ body {
           animation-delay: 8.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  display: block;
+  display: inline-block;
   opacity: 0;
   overflow: hidden;
   white-space: nowrap;

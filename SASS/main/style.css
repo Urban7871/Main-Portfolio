@@ -383,8 +383,7 @@ body {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   color: white;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#3a7bd5), to(#3a6073));
-  background-image: linear-gradient(to right bottom, #3a7bd5, #3a6073);
+  background: rgba(58, 123, 213, 0.8);
   -webkit-box-shadow: 0 1rem 6rem rgba(58, 123, 213, 0.8);
           box-shadow: 0 1rem 6rem rgba(58, 123, 213, 0.8);
   text-align: center;
@@ -401,13 +400,28 @@ body {
 .card__side--back-2 {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  color: white;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#3a7bd5), to(#3a6073));
-  background-image: linear-gradient(to right bottom, #3a7bd5, #3a6073);
+  color: #522074;
+  font-family: "Press Start 2P", cursive;
+  background: #121b1b;
   -webkit-box-shadow: 0 1rem 6rem rgba(58, 123, 213, 0.8);
           box-shadow: 0 1rem 6rem rgba(58, 123, 213, 0.8);
   text-align: center;
-  font-size: 6rem;
+  font-size: 5rem;
+}
+
+.card__side--back-2 h4 {
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+}
+
+.card__side--back-2 ul {
+  margin-top: 1rem;
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+}
+
+.card__side--back-2 ul li {
+  margin-top: 1.5rem;
 }
 
 .card:hover .card__side {
@@ -470,6 +484,24 @@ body {
   font-weight: 500;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.card .link-front {
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.card .link-front a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card .link-front ul {
+  list-style: none;
 }
 
 #contact {
@@ -706,6 +738,13 @@ img {
 #skills .more__text {
   height: 0;
   display: none;
+}
+
+@media (max-width: 75em) {
+  #skills .more__text {
+    height: 100%;
+    display: unset;
+  }
 }
 
 #projects {

@@ -7,8 +7,20 @@
 }
 
 html{
-    font-size: 62.5%;
     scroll-behavior: smooth;
+    font-size: 68.75%; //rem == 10px
+    @include respond(tab-land) {
+        font-size: 56.25%; //rem ==8px
+    }
+    @include respond(tab-port) {
+        font-size: 50%; //rem == 7px
+    }
+    @include respond(phone) {
+        font-size: 43.75%; //rem == 6px
+    }
+    @include respond(big-deskopt) {
+        font-size: 81.25%; //rem == 13px
+    }
 }
 
 body {

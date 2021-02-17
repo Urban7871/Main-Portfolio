@@ -3,6 +3,9 @@
     -moz-perspective: 150rem;
     position: relative; //always use when child has position:absolute 
     height: 70rem;
+
+
+    
     
     &__side {
         border-radius: 1rem;
@@ -25,7 +28,7 @@
         &--back-1 {
             transform: rotateY(180deg);
             color: white;
-            background-image: linear-gradient(to right bottom, #3a7bd5, #3a6073);
+            background: rgba(#3a7bd5, .8);
             box-shadow: 0 1rem 6rem rgba(#3a7bd5, .8);
             text-align: center;
             font-size: 6rem;
@@ -39,11 +42,24 @@
         }
         &--back-2 {
             transform: rotateY(180deg);
-            color: white;
-            background-image: linear-gradient(to right bottom, #3a7bd5, #3a6073);
+            color: $home-text-primary-color;
+            font-family: $home-text-font;
+            background: $home-background-primary-color;
             box-shadow: 0 1rem 6rem rgba(#3a7bd5, .8);
             text-align: center;
-            font-size: 6rem;
+            font-size: 5rem;
+
+
+            h4{
+                transform: translateY(2rem);
+            }
+            ul{
+                margin-top: 1rem;
+                transform: translateY(2rem);
+                li{
+                    margin-top: 1.5rem;
+                }
+            }
         }
     }
 
@@ -106,5 +122,25 @@
         font-weight: 500;
         padding-left: 1rem;
         padding-right: 1rem;
+
+
+    }
+
+    .link-front {
+        position: absolute;
+        top: 80%;
+        left: 45%;
+        color: black;
+        text-align: center;
+        font-size: 2rem;
+
+        a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        ul{
+            list-style: none;
+        }
     }
 }
