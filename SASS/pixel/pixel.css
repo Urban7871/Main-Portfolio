@@ -555,6 +555,12 @@ body {
   }
 }
 
+@media (max-width: 37.5em) {
+  .introduction-button {
+    padding-top: 2px;
+  }
+}
+
 .introduction-button .button {
   background: transparent;
   border: none;

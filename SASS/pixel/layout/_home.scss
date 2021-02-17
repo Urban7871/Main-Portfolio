@@ -95,6 +95,9 @@ body {
             transform: translateY(-2rem);
             padding-top: 2rem;
         }
+        @include respond (phone) {
+            padding-top: 2px;
+        }
         
 
         .button {
