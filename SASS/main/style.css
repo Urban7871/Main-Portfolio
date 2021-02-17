@@ -425,13 +425,13 @@ body {
   height: 50%;
 }
 
-.card__picture-2 {
-  background-image: url(../../IMG/portfolio-img.PNG);
+.card__picture-1 {
+  background-image: url(../IMG/todo-list-img.PNG);
+  height: 50%;
 }
 
-.card__picture-1 {
-  background-image: url(../../IMG/todo-list-img.PNG);
-  height: 50%;
+.card__picture-2 {
+  background-image: url(../IMG/portfolio-img.PNG);
 }
 
 .card__heading {

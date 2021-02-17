@@ -63,12 +63,13 @@
     &__picture {
         background-size: cover;
         height: 50%;
+    
+    &-1 {
+        background-image: url(../IMG/todo-list-img.PNG);
+        height: 50%;
+    }
         &-2{
-            background-image: url(../../IMG/portfolio-img.PNG);
-        }
-        &-1 {
-            background-image: url(../../IMG/todo-list-img.PNG);
-            height: 50%;
+            background-image: url(../IMG/portfolio-img.PNG);
         }
     }
 
