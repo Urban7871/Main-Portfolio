@@ -4,6 +4,9 @@
     position: relative; //always use when child has position:absolute 
     height: 70rem;
 
+    @include respond(tab-land){
+        height: 55rem;
+    }
 
     
     
@@ -18,12 +21,28 @@
         backface-visibility: hidden;    //hides back-side of the cards 
         width: 100%;
         
+        @include respond(tab-land) {
+            height: 55rem;
+        }
+        
 
         &--front-1 {
             background-color: white;
            
             box-shadow: 0 1rem 6rem rgba(#3a7bd5, .8);
             color: white;
+
+
+
+            .phone-text {
+                display: none;
+                @include respond(tab-land) {
+                    display: unset;
+                }
+            }
+            
+
+           
         }
         &--back-1 {
             transform: rotateY(180deg);
@@ -32,12 +51,22 @@
             box-shadow: 0 1rem 6rem rgba(#3a7bd5, .8);
             text-align: center;
             font-size: 6rem;
+            @include respond(tab-land) {
+                display: none;
+            }
         }
         &--front-2 {
             background-color: white;
            
             box-shadow: 0 1rem 6rem rgba(#3a7bd5, .8);
             color: white;
+
+            .phone-text {
+                display: none;
+                @include respond(tab-land) {
+                    display: unset;
+                }
+            }
             
         }
         &--back-2 {
@@ -48,6 +77,9 @@
             box-shadow: 0 1rem 6rem rgba(#3a7bd5, .8);
             text-align: center;
             font-size: 5rem;
+            @include respond(tab-land) {
+                display: none;
+            }
 
 
             h4{
@@ -71,6 +103,9 @@
 
    &:hover &__side{  //card:hover only transforms __side--front
     transform: rotateY(-180deg);
+    @include respond(tab-land) {
+        transform: rotateY(0deg);
+    }
    }
    &:hover &__side--back{
     transform: rotateY(0);

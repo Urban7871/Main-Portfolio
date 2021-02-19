@@ -21,10 +21,15 @@ body {
             height: 40rem;
             top: 33%;
         }
+        @include respond (phone) {
+            height: 35rem;
+            top: 30%;
+        }
     }   
 
     &-hello {
         position: absolute;
+        
         
         top: 45%;
         left: 40%;
@@ -37,12 +42,14 @@ body {
             top: 10%;
             left: 5%;
             font-size: 2.5rem;
+            white-space: normal;
         }
     }
     &-name{
         position: absolute;
         top: 45%;
         left: 33%;
+        
         
         &--text{
             @include helloNameAnimation(2s);
@@ -53,6 +60,7 @@ body {
             top: 10%;
             left: 5%;
             font-size: 2.5rem;
+            white-space: normal;
             
         }
         animation: blink .5s step-end infinite;
@@ -77,6 +85,9 @@ body {
           opacity: 0;
             overflow: hidden;
             white-space: nowrap;
+            @include respond (tab-land){
+                white-space: normal;
+            }
         }        
             
 }
@@ -97,29 +108,38 @@ body {
         }
         @include respond (phone) {
             padding-top: 2px;
+            height: 40rem;
         }
         
 
         .button {
+            
             background: transparent;
             border: none;
             color:$home-text-primary-color;
             font-size: 2.6rem;
             font-family: $home-text-font;
             margin-bottom: 0;
-            transform: translateX(-10rem);
             @include respond (tab-land) {
                 transform: translateX(-18rem);
                 font-size: 2.1rem;
+                margin-top: 2rem;
+            }
+            @include respond(phone) {
+                transform: translateX(-2rem);
+                margin-bottom: 3rem;
             }
 
         &-1:hover,
         &-2:hover,
         &-3:hover {
         color: red;
-        transform: translate(-10rem, -.8rem);
+        transform: translate(0, -.8rem);
         @include respond (tab-land) {
             transform: translate(-18rem, -.4rem);
+        }
+        @include respond (phone) {
+            transform: translate(-2rem, -.4rem);
         }
     }
         }

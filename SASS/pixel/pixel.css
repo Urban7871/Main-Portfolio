@@ -93,6 +93,7 @@ big-deskopt
   }
   98% {
     opacity: 1;
+    width: 100%;
   }
   100% {
     width: 100%;
@@ -110,6 +111,7 @@ big-deskopt
   }
   98% {
     opacity: 1;
+    width: 100%;
   }
   100% {
     width: 100%;
@@ -458,6 +460,13 @@ body {
   }
 }
 
+@media (max-width: 37.5em) {
+  .introduction .myAwatar {
+    height: 35rem;
+    top: 30%;
+  }
+}
+
 .introduction-hello {
   position: absolute;
   top: 45%;
@@ -479,6 +488,7 @@ body {
     top: 10%;
     left: 5%;
     font-size: 2.5rem;
+    white-space: normal;
   }
 }
 
@@ -505,6 +515,7 @@ body {
     top: 10%;
     left: 5%;
     font-size: 2.5rem;
+    white-space: normal;
   }
 }
 
@@ -535,6 +546,12 @@ body {
   white-space: nowrap;
 }
 
+@media (max-width: 75em) {
+  .introduction-chose--text {
+    white-space: normal;
+  }
+}
+
 .introduction-button {
   height: 25rem;
   display: inline-block;
@@ -558,6 +575,7 @@ body {
 @media (max-width: 37.5em) {
   .introduction-button {
     padding-top: 2px;
+    height: 40rem;
   }
 }
 
@@ -568,8 +586,6 @@ body {
   font-size: 2.6rem;
   font-family: "Press Start 2P", cursive;
   margin-bottom: 0;
-  -webkit-transform: translateX(-10rem);
-          transform: translateX(-10rem);
 }
 
 @media (max-width: 75em) {
@@ -577,19 +593,35 @@ body {
     -webkit-transform: translateX(-18rem);
             transform: translateX(-18rem);
     font-size: 2.1rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .introduction-button .button {
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
+    margin-bottom: 3rem;
   }
 }
 
 .introduction-button .button-1:hover, .introduction-button .button-2:hover, .introduction-button .button-3:hover {
   color: red;
-  -webkit-transform: translate(-10rem, -0.8rem);
-          transform: translate(-10rem, -0.8rem);
+  -webkit-transform: translate(0, -0.8rem);
+          transform: translate(0, -0.8rem);
 }
 
 @media (max-width: 75em) {
   .introduction-button .button-1:hover, .introduction-button .button-2:hover, .introduction-button .button-3:hover {
     -webkit-transform: translate(-18rem, -0.4rem);
             transform: translate(-18rem, -0.4rem);
+  }
+}
+
+@media (max-width: 37.5em) {
+  .introduction-button .button-1:hover, .introduction-button .button-2:hover, .introduction-button .button-3:hover {
+    -webkit-transform: translate(-2rem, -0.4rem);
+            transform: translate(-2rem, -0.4rem);
   }
 }
 
@@ -604,12 +636,18 @@ body {
           animation: typingStayLinks 1.5s steps(30, end), blink 0.5s step-end 3;
   -webkit-animation-delay: 5.5s;
           animation-delay: 5.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   display: inline-block;
   opacity: 0;
   overflow: hidden;
   white-space: nowrap;
+}
+
+@media (max-width: 75em) {
+  .introduction-button--text1 {
+    white-space: normal;
+  }
 }
 
 .introduction-button--text2 {
@@ -617,12 +655,18 @@ body {
           animation: typingStayLinks 1.5s steps(30, end), blink 0.5s step-end 3;
   -webkit-animation-delay: 7s;
           animation-delay: 7s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   display: inline-block;
   opacity: 0;
   overflow: hidden;
   white-space: nowrap;
+}
+
+@media (max-width: 75em) {
+  .introduction-button--text2 {
+    white-space: normal;
+  }
 }
 
 .introduction-button--text3 {
@@ -630,11 +674,17 @@ body {
           animation: typingStayLinks 1.5s steps(30, end), blink 0.5s step-end 3;
   -webkit-animation-delay: 8.5s;
           animation-delay: 8.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   display: inline-block;
   opacity: 0;
   overflow: hidden;
   white-space: nowrap;
+}
+
+@media (max-width: 75em) {
+  .introduction-button--text3 {
+    white-space: normal;
+  }
 }
 /*# sourceMappingURL=pixel.css.map */

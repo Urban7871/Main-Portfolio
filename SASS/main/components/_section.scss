@@ -84,6 +84,7 @@
     .more__text {
         height: 0;
         display: none;
+        margin: 1rem 2px 1rem 2px;
     }
     @include respond(tab-land) {
         .more__text {
