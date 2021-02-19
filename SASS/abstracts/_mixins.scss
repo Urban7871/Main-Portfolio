@@ -20,16 +20,21 @@ big-deskopt
     overflow: hidden;
     animation: typing $animationTime steps(30, end);
     white-space: nowrap;
+
 }
 @mixin linksAnimation($linkAnimationTime, $linkAnimationDelay){
     animation: typingStayLinks $linkAnimationTime  steps(30, end), blink .5s step-end 3;
     animation-delay: $linkAnimationDelay;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: both;
     display: inline-block;
 
     opacity: 0;
     overflow: hidden;
     white-space: nowrap;
+
+    @include respond(tab-land) {
+        white-space: normal;
+    }
 }
 
 @mixin clearFix {   
